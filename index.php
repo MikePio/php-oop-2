@@ -1,5 +1,10 @@
 <?php
-$test = '$test';
+
+require_once __DIR__ . 'models/PetProduct.php';
+require_once __DIR__ . 'models/Bird.php';
+require_once __DIR__ . 'models/Cat.php';
+require_once __DIR__ . 'models/Dog.php';
+require_once __DIR__ . 'models/Fish.php';
 
 // icona cane
 // <i class="fa-solid fa-dog"></i>
@@ -58,7 +63,7 @@ $test = '$test';
 // Uccelli
 // Prezzo:
 // 184.99
-// Materiale:
+// Materiali:
 // Legno
 // Dimensioni:
 // 83 x 67x 153
@@ -88,8 +93,8 @@ $test = '$test';
 // Pesci
 // Prezzo:
 // 55.99
-// Caratteristiche
-// Sistema di filtraggio integrato
+// Materiali:
+// Vetro, Acciaio, Plastica
 // Dimensioni:
 // L23 cm x W10 cm x H27.5 cm
 
@@ -110,13 +115,11 @@ $test = '$test';
 </head>
 
 <body class="bg-dark text-white">
-  <h1>test</h1>
-  <h2><?php echo $test ?></h2>
   
-<i class="fa-solid fa-crow"></i>
-<i class="fa-solid fa-dog"></i>
-<i class="fa-solid fa-cat"></i>
-<i class="fa-solid fa-fish"></i>
+  <i class="fa-solid fa-crow"></i>
+  <i class="fa-solid fa-dog"></i>
+  <i class="fa-solid fa-cat"></i>
+  <i class="fa-solid fa-fish"></i>
 
 
 
