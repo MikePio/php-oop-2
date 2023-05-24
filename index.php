@@ -7,110 +7,55 @@ require_once __DIR__ . '/models/Dog.php';
 require_once __DIR__ . '/models/Fish.php';
 
 //! non si può scrivere in questo modo
-// $dogCrunchyBites = new Dog('Crunchy Bites', 'Cani', '€43,99', '545g', ['prosciutto, riso']);
+// $dogCrunchyBites = new Dog('Crunchy Bites', 'Dogs', '€43,99', '545g', ['prosciutto, riso']);
 //* da PetProduct.php
-$dogCrunchyBites = new Dog('Crunchy Bites', 'Cani', '€43,99');
+$dogCrunchyBites = new Dog('Crunchy Bites', 'Dogs', '€43,99');
 
 //* da Dog che è il figlio di PetProduct.php
 $dogCrunchyBites->setNetWeight('545g');
-$dogCrunchyBites->setIngredients(['prosciutto', 'riso']);
+$dogCrunchyBites->setIngredients(['Ham', 'Rice']);
 
 //* Stampo l'oggetto (il prodotto)
 var_dump($dogCrunchyBites);
 
-
-
-// icona cane
-// <i class="fa-solid fa-dog"></i>
-
-// gatto
-// <i class="fa-solid fa-cat"></i>
-
-// fish
-// <i class="fa-solid fa-fish"></i>
-
-// uccello
-// <i class="fa-solid fa-crow"></i>
-
-// Cibo per cani
-// Categoria:
-// Cani
-// Prezzo:
-// 43.99
-// Peso netto:
-// 545g
-// Ingredienti:
-// Prosciutto, Riso
-
 // Cibo per cani 2
-// Categoria:
-// Cani
-// Prezzo:
-// 44.99
-// Peso netto:
-// 600g
-// Ingredienti:
-// Manzo, Cereali
-
+$dogSalmonPeas = new Dog('Salmon and Peas', 'Dogs', '€44,99');
+$dogSalmonPeas->setNetWeight('600g');
+$dogSalmonPeas->setIngredients(['Salmon', 'Peas']);
 // Cibo per gatti
-// Categoria:
-// Gatti
-// Prezzo:
-// 34.99
-// Peso netto:
-// 400g
-// Ingredienti:
-// Tonno, Pollo, Prosciutto
-
+$catChicken = new Cat('Chicken for cats', 'Cats', '€44,99');
+$catChicken->setNetWeight('400g');
+$catChicken->setIngredients('Chicken');
 // Mangime per pesci
-// Categoria:
-// Pesci
-// Prezzo:
-// 2.95
-// Peso netto:
-// 30g
-// Ingredienti:
-// Ceriali, Lieviti, Alghe
-
+$fishFeed = new Fish('Fish feed', 'Fishes', '€2,95');
+$fishFeed->setNetWeight('30g');
+$fishFeed->setIngredients(['Cereals', 'Yeasts', 'Algae']);
 // Voliera in legno
-// Categoria:
-// Uccelli
-// Prezzo:
-// 184.99
-// Materiali:
-// Legno
-// Dimensioni:
-// 83 x 67x 153
-
+$birdAviary = new Bird('Bird aviary', 'Birds', '€184,99');
+$birdAviary->setMaterials('Wood');
+$birdAviary->setDimensions('83 x 67x 153');
 // Kong classic
-// Categoria:
-// Cani
-// Prezzo:
-// 13.49
-// Caratteristiche
-// Galleggia e rimbalza
-// Dimensioni:
-// 8.5 cm x 10 cm
-
+$dogToy = new Dog('Kong classic, Dog toy', 'Dogs', '€13,49');
+$dogToy->setCharacteristics('Floats and bounces');
+$dogToy->setDimensions('8,5 cm x 10 cm');
 // Topo di peluche
-// Categoria:
-// Gatti
-// Prezzo:
-// 5
-// Caratteristiche
-// Morbido con codina in corda
-// Dimensioni:
-// 8.5 cm x 10 cm
-
+$catPlushMouse = new Cat('Plush mouse', 'Cats', '€4,99');
+$catPlushMouse->setCharacteristics('Soft with rope tail');
+$catPlushMouse->setDimensions('8,5 cm x 10 cm');
 // Acquario
-// Categoria:
-// Pesci
-// Prezzo:
-// 55.99
-// Materiali:
-// Vetro, Acciaio, Plastica
-// Dimensioni:
-// L23 cm x W10 cm x H27.5 cm
+$fishAquarius = new Fish('Aquarius', 'Fishes', '€55,99');
+$fishAquarius->setMaterials(['Glass', 'Steel', 'Plastic']);
+$fishAquarius->setDimensions('L23 cm x W10 cm x H27,5 cm');
+
+
+
+var_dump($dogSalmonPeas);
+var_dump($catChicken);
+var_dump($fishFeed);
+var_dump($birdAviary);
+var_dump($dogToy);
+var_dump($catPlushMouse);
+var_dump($fishAquarius);
 
 ?>
 
