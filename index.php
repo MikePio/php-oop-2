@@ -1,10 +1,24 @@
 <?php
 
-require_once __DIR__ . 'models/PetProduct.php';
-require_once __DIR__ . 'models/Bird.php';
-require_once __DIR__ . 'models/Cat.php';
-require_once __DIR__ . 'models/Dog.php';
-require_once __DIR__ . 'models/Fish.php';
+require_once __DIR__ . '/models/PetProduct.php';
+require_once __DIR__ . '/models/Bird.php';
+require_once __DIR__ . '/models/Cat.php';
+require_once __DIR__ . '/models/Dog.php';
+require_once __DIR__ . '/models/Fish.php';
+
+//! non si può scrivere in questo modo
+// $dogCrunchyBites = new Dog('Crunchy Bites', 'Cani', '€43,99', '545g', ['prosciutto, riso']);
+//* da PetProduct.php
+$dogCrunchyBites = new Dog('Crunchy Bites', 'Cani', '€43,99');
+
+//* da Dog che è il figlio di PetProduct.php
+$dogCrunchyBites->setNetWeight('545g');
+$dogCrunchyBites->setIngredients(['prosciutto', 'riso']);
+
+//* Stampo l'oggetto (il prodotto)
+var_dump($dogCrunchyBites);
+
+
 
 // icona cane
 // <i class="fa-solid fa-dog"></i>
