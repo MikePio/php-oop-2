@@ -39,7 +39,7 @@ $dogToy = new Dog('Kong classic, Dog toy', 'Dogs', '€13,49');
 $dogToy->setCharacteristics('Floats and bounces');
 $dogToy->setDimensions('8,5 cm x 10 cm');
 // Topo di peluche
-$catPlushMouse = new Cat('Plush mouse', 'Cats', '€4,99');
+$catPlushMouse = new Cat('Plush mouse, Cat toy', 'Cats', '€4,99');
 $catPlushMouse->setCharacteristics('Soft with rope tail');
 $catPlushMouse->setDimensions('8,5 cm x 10 cm');
 // Acquario
@@ -47,15 +47,30 @@ $fishAquarius = new Fish('Aquarius', 'Fishes', '€55,99');
 $fishAquarius->setMaterials(['Glass', 'Steel', 'Plastic']);
 $fishAquarius->setDimensions('L23 cm x W10 cm x H27,5 cm');
 
+// var_dump($dogSalmonPeas);
+// var_dump($catChicken);
+// var_dump($fishFeed);
+// var_dump($birdAviary);
+// var_dump($dogToy);
+// var_dump($catPlushMouse);
+// var_dump($fishAquarius);
+
+$products = [
+
+  $dogCrunchyBites,
+  $dogSalmonPeas,
+  $catChicken,
+  $fishFeed,
+  $birdAviary,
+  $dogToy,
+  $catPlushMouse,
+  $fishAquarius,
 
 
-var_dump($dogSalmonPeas);
-var_dump($catChicken);
-var_dump($fishFeed);
-var_dump($birdAviary);
-var_dump($dogToy);
-var_dump($catPlushMouse);
-var_dump($fishAquarius);
+];
+
+//* Stampo tutti gli oggetti (i prodotti)
+var_dump($products);
 
 ?>
 
@@ -67,20 +82,34 @@ var_dump($fishAquarius);
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- font-awesome -->
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous' />
   <!-- BOOTSTRAP -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous' />
   <title>Pet Shop</title>
 </head>
 
 <body class="bg-dark text-white">
-  
+
   <i class="fa-solid fa-crow"></i>
   <i class="fa-solid fa-dog"></i>
   <i class="fa-solid fa-cat"></i>
   <i class="fa-solid fa-fish"></i>
 
 
+  <header class="bg-dark text-white text-start p-5">
+    <h1>Pet Shop</h1>
+  </header>
+
+  <div class="container d-flex flex-wrap align-items-start my-5">
+
+
+  </div>
+
+  <footer class="bg-dark text-white text-center py-5">
+    <a href="https://github.com/MikePio" style="color:white;">
+      <div>By MikePi</div>
+    </a>
+  </footer>
 
 </body>
 
