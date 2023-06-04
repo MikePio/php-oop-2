@@ -7,9 +7,9 @@ class Bird extends PetProduct {
   public $materials;
   public $dimensions;
 
-  public function __construct($_title, $_category, $_price){
+  public function __construct($_title, $_category, $_price, $_image, $_icon){
     //* ereditati dal genitore PetProduct
-    parent::__construct($_title, $_category, $_price);
+    parent::__construct($_title, $_category, $_price, $_image, $_icon);
 
 
 
