@@ -29,14 +29,14 @@ $dogSalmonPeas->setCharacteristics(' - ');
 $dogSalmonPeas->setDimensions(' - ');
 
 // Cibo per gatti
-$catChicken = new Cat('Chicken for cats', 'Cats', '€44,99', 'img/img3.png', 'fa-solid fa-cat');
+$catChicken = new Cat('Chicken for cats', 'Cats', '€44,99', 'img/img3.jpg', 'fa-solid fa-cat');
 $catChicken->setNetWeight('400g');
 $catChicken->setIngredients(['Chicken']);
 $catChicken->setCharacteristics(' - ');
 $catChicken->setDimensions(' - ');
 
 // Mangime per pesci
-$fishFeed = new Fish('Fish feed', 'Fishes', '€2,95', 'img/img4.png', 'fa-solid fa-fish');
+$fishFeed = new Fish('Fish feed', 'Fishes', '€2,95', 'img/img4.jpg', 'fa-solid fa-fish');
 $fishFeed->setNetWeight('30g');
 $fishFeed->setIngredients(['Cereals', 'Yeasts', 'Algae']);
 $fishFeed->setMaterials([' - ']);
@@ -113,11 +113,11 @@ $products = [
 
 <body class="bg-dark text-white">
 
-  <header class="bg-dark text-white text-start p-5">
+  <header class="bg-dark text-white text-start p-5"  style="background-color: rgba(0, 0, 0, 0.2) !important;">
     <h1>Pet Shop</h1>
   </header>
 
-  <main>
+<main>
 
 <div class="container d-flex flex-wrap align-items-start my-5">
 
@@ -160,10 +160,42 @@ $products = [
 
 </main>
 
-  <footer class="bg-dark text-white text-center py-5">
-    <a href="https://github.com/MikePio" style="color:white;">
-      <div>By MikePi</div>
-    </a>
+  <footer class="bg-dark text-center text-white">
+
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+
+    <!-- 
+      <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+      <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+      <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-google"></i></a> 
+    -->
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1 rounded-circle"
+                href="https://www.instagram.com/michelepiopilla/" role="button"><i class="fab fa-instagram"></i></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://www.linkedin.com/in/michele-pilla/" role="button"><i
+                    class="fab fa-linkedin-in"></i></a>
+
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://github.com/MikePio"
+                role="button"><i class="fab fa-github"></i></a>
+
+        </section>
+        <!-- Section: Social media -->
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 By
+        <a class="text-white" href="https://github.com/MikePio">@MikePio</a>
+    </div>
+
   </footer>
 
 </body>
